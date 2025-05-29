@@ -4,7 +4,7 @@
 display_menu() {
     echo "Please select the Windows Server version:"
     echo "1. Windows Server 2016"
-    echo "2. Windows Server 2019"
+    echo "2. Windows X Lite 10"
     echo "3. Windows Tiny 10"
     read -p "Enter your choice: " choice
 }
@@ -32,15 +32,15 @@ case $choice in
         iso_file="windows2016.iso"
         ;;
     2)
-        # Windows Server 2019
-        img_file="windows2019.img"
-        iso_link="https://go.microsoft.com/fwlink/p/?LinkID=2195167&clcid=0x409&culture=en-us&country=US"
-        iso_file="windows2019.iso"
+        # Windows X Lite 10
+        img_file="windowsx10.img"
+        iso_link="https://pixeldrain.com/api/file/JPGbDeq4"
+        iso_file="windowsx10.iso"
         ;;
     3)
         # Windows windowstiny10
         img_file="windowstiny10.img"
-        iso_link="https://ia601403.us.archive.org/18/items/tiny-10-64-bit/tiny10%2021H2%20x64%20beta%201.iso"
+        iso_link="https://pixeldrain.com/api/file/YyQPQseU"
         iso_file="windowstiny10.iso"
         ;;
     *)
